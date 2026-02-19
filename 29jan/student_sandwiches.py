@@ -24,3 +24,7 @@ students = [1,1,1,0,0,1]
 sandwiches = [1,0,0,0,1,1]
 
 countStudents(students, sandwiches)
+
+
+
+

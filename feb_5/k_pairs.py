@@ -1,13 +1,18 @@
 import heapq as hq
 
 def k_pairs_smallest(num1, num2, k):
-    hq.heapify(num1)
-    hq.heapify(num2)
-    count = 0
     result = []
-    while(count<3):
-        result.append([hq.heappop(num1), hq.heappop(num2)])
-        count+=1
+    if not num1 or not num2 or not k:
+        return result
+    heap = []
+    visited = set()
+
+    hq.heappush(heap, (num1[0]+num2[0], 0, 0))
+    visited.add((0,0))
+
+    while k and heap:
+        
+    
     return result
 
 nums1 = [1,7,11]

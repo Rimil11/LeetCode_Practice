@@ -1,5 +1,4 @@
-from collections import deque
-
+# Brute Force
 
 def timeRequiredToBuy(tickets, k):
     i = 0
