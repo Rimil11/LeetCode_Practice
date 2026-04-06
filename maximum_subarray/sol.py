@@ -9,7 +9,7 @@ def max_sub(nums):
         curr_sum += nums[i]
         if(curr_sum>max_sum):
             max_sum = curr_sum
-        if(nums[i]< 0):
+        if(curr_sum < 0):
             curr_sum = 0
         i+=1
     return max_sum
@@ -17,5 +17,6 @@ def max_sub(nums):
 
 
 
-nums = [-2,1,-3,4,-1,2,1,-5,4]
+nums = [-2, -1, -3, -4, -1, -2, -1, -5, -4]
 result = max_sub(nums)
+print(result)
