@@ -12,7 +12,7 @@ def max_sub(nums):
         if(nums[i]< 0):
             curr_sum = 0
         i+=1
-    print(max_sum) 
+    return max_sum
 
 
 
