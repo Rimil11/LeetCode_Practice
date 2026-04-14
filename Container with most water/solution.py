@@ -24,15 +24,9 @@ def containerWithMostWater(height):
         if(height[i]<height[j]):
             area = height[i] * (j-i)
             i+=1
-        elif(height[i]>height[j]):
-            area = height[j] * (j-i)
-            j-=1
         else:
             area = height[j] * (j-i)
-            if(height[i+1]>height[j-1]):
-                i+=1
-            else:
-                j-=1
+            j-=1
         if lar<area:
             lar = area
         # print("Current Area: ", area)
